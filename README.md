@@ -2,7 +2,7 @@
 FragmentSwapper is an Open Source Android library that allows easy fragment's management. It is somewhat similar to Activities management model.
 For instance, new fragment can be launched from another one with action's request (using request code) and then recieve the result.
 
-FragmentSwapper works with Android Support Library.
+This fork doesn't work with Android Suppor Library v4.
 
 In order to manage multiple fragments, FragmentSwapper object is required.
 
@@ -11,28 +11,6 @@ Each fragment must implement FragmentDescriptor interface. Its example implement
 Currently, it is possible to manage fragments within one container, using SingleContainerFragmentSwapper class.
 
 For information how to initialize the SingleContainerFragmentSwapper, and how to implement fragment swapping please check sample application and the library code.
-
-### Project integration
-
-Add repository reference in your build.gradle file:
-
-
-repositories {
-    ...
-    maven {
-        url 'http://dev.open-rnd.net:30844/content/groups/public/'
-    }
-    ...
-}
-
-
-Add library dependence:
-
-
-dependencies {
-    compile group: "pl.openrnd.android", name: "fragmentsswapper", version: "1.0.1"
-}
-
 
 ### License
 
