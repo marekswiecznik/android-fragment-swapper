@@ -18,7 +18,7 @@
 
 package pl.openrnd.managers.fragmentsswapper;
 
-import android.support.v4.app.FragmentManager;
+import android.app.FragmentManager;
 
 /**
  * FragmentSwapper initialization parameters class.

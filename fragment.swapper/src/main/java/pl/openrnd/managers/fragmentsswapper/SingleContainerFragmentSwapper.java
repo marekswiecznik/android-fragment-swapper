@@ -21,9 +21,9 @@ package pl.openrnd.managers.fragmentsswapper;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.util.Log;
 
 import java.util.LinkedList;
@@ -32,7 +32,7 @@ import java.util.LinkedList;
  * FragmentSwapper that supports only one container for fragments transactions.
  *
  * @see pl.openrnd.managers.fragmentsswapper.FragmentDescriptor
- * @see android.support.v4.app.Fragment
+ * @see android.app.Fragment
  *
  * @param <F> Fragment class that is supported by FragmentSwapper.
  */

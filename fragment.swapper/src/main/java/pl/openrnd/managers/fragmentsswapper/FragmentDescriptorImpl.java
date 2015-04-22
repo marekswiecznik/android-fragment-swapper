@@ -21,7 +21,7 @@ package pl.openrnd.managers.fragmentsswapper;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.util.Log;
 
 /**
@@ -59,7 +59,7 @@ public class FragmentDescriptorImpl implements FragmentDescriptor {
     /**
      * Method must be called in onAttach() method of holding fragment.
      *
-     * @see android.support.v4.app.Fragment
+     * @see android.app.Fragment
      *
      * @param activity Activity that the fragment will be attached to.
      */
@@ -111,7 +111,7 @@ public class FragmentDescriptorImpl implements FragmentDescriptor {
     /**
      * Method must be called in onCreate() method of holding fragment.
      *
-     * @see android.support.v4.app.Fragment
+     * @see android.app.Fragment
      *
      * @param savedInstanceState Bundle object containing saved state.
      */
@@ -130,7 +130,7 @@ public class FragmentDescriptorImpl implements FragmentDescriptor {
     /**
      * Method must be called in onSaveInstanceState() method of holding fragment.
      *
-     * @see android.support.v4.app.Fragment
+     * @see android.app.Fragment
      *
      * @param outState Bundle to store saved state.
      */

@@ -18,13 +18,13 @@
 
 package pl.openrnd.managers.fragmentsswapper;
 
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 
 /**
  * Interface defining base FragmentSwapper API.
  *
  * @see pl.openrnd.managers.fragmentsswapper.FragmentDescriptor
- * @see android.support.v4.app.Fragment
+ * @see android.app.Fragment
  *
  * @param <F> Fragment class that is supported by FragmentSwapper.
  */

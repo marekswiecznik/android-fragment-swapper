@@ -19,8 +19,8 @@
 package pl.openrnd.managers.fragmentsswapper.sample;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+import android.app.Fragment;
+import android.app.Activity;;
 import android.util.Log;
 
 import pl.openrnd.managers.fragmentsswapper.FragmentSwapper;
@@ -34,7 +34,7 @@ import pl.openrnd.managers.fragmentsswapper.sample.fragment.Screen2Fragment;
 import pl.openrnd.managers.fragmentsswapper.sample.fragment.Screen3Fragment;
 import pl.openrnd.managers.fragmentsswapper.sample.fragment.Screen4Fragment;
 
-public class MainActivity extends FragmentActivity implements SampleScreenManager {
+public class MainActivity extends Activity implements SampleScreenManager {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     private SingleContainerFragmentSwapper mFragmentSwapper;
@@ -51,7 +51,7 @@ public class MainActivity extends FragmentActivity implements SampleScreenManage
         InitializationParams.Builder builder = new InitializationParams.Builder();
         builder.screenManager(this);
         builder.contentFrame(R.id.fragmentContainer);
-        builder.fragmentManager(getSupportFragmentManager());
+        builder.fragmentManager(getFragmentManager());
 
         mFragmentSwapper = new SingleContainerFragmentSwapper();
         mFragmentSwapper.setOnFragmentSwapperListener(mOnFragmentSwapperListener);

@@ -37,7 +37,7 @@ public class SwapParams {
     /**
      * Gets animation resource id.
      *
-     * @see android.support.v4.app.FragmentTransaction
+     * @see android.app.FragmentTransaction
      *
      * @return Animation resource id.
      */
@@ -76,7 +76,7 @@ public class SwapParams {
     /**
      * Gets animation resource id.
      *
-     * @see android.support.v4.app.FragmentTransaction
+     * @see android.app.FragmentTransaction
      *
      * @return Animation resource id.
      */
@@ -87,7 +87,7 @@ public class SwapParams {
     /**
      * Gets animation resource id.
      *
-     * @see android.support.v4.app.FragmentTransaction
+     * @see android.app.FragmentTransaction
      *
      * @return Animation resource id.
      */
@@ -98,7 +98,7 @@ public class SwapParams {
     /**
      * Gets animation resource id.
      *
-     * @see android.support.v4.app.FragmentTransaction
+     * @see android.app.FragmentTransaction
      *
      * @return Animation resource id.
      */
@@ -215,7 +215,7 @@ public class SwapParams {
         /**
          * Sets animation resource id.
          *
-         * @see android.support.v4.app.FragmentTransaction
+         * @see android.app.FragmentTransaction
          *
          * @param enterAnimResId Animation resource id.
          * @return Builder object.
@@ -228,7 +228,7 @@ public class SwapParams {
         /**
          * Sets animation resource id.
          *
-         * @see android.support.v4.app.FragmentTransaction
+         * @see android.app.FragmentTransaction
          *
          * @param exitAnimResId Animation resource id.
          * @return Builder object.
@@ -241,7 +241,7 @@ public class SwapParams {
         /**
          * Sets animation resource id.
          *
-         * @see android.support.v4.app.FragmentTransaction
+         * @see android.app.FragmentTransaction
          *
          * @param popEnterAnimResId Animation resource id.
          * @return Builder object.
@@ -254,7 +254,7 @@ public class SwapParams {
         /**
          * Sets animation resource id.
          *
-         * @see android.support.v4.app.FragmentTransaction
+         * @see android.app.FragmentTransaction
          *
          * @param popExitAnimResId Animation resource id.
          * @return Builder object.

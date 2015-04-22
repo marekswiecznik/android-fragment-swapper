@@ -18,7 +18,7 @@
 
 package pl.openrnd.managers.fragmentsswapper;
 
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 
 /**
  * Interface used for getting notification about state and requests from FragmentSwapper.

@@ -18,10 +18,12 @@
 
 package pl.openrnd.managers.fragmentsswapper;
 
+import android.animation.Animator;
+import android.animation.TimeAnimator;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.animation.Animation;
 
 import pl.openrnd.utils.ViewUtils;
@@ -41,7 +43,7 @@ public class BaseFragment extends Fragment implements FragmentDescriptor {
     }
 
     /**
-     * @see android.support.v4.app.Fragment
+     * @see android.app.Fragment
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,7 +53,7 @@ public class BaseFragment extends Fragment implements FragmentDescriptor {
     }
 
     /**
-     * @see android.support.v4.app.Fragment
+     * @see android.app.Fragment
      */
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -61,7 +63,7 @@ public class BaseFragment extends Fragment implements FragmentDescriptor {
     }
 
     /**
-     * @see android.support.v4.app.Fragment
+     * @see android.app.Fragment
      */
     @Override
     public void onAttach(Activity activity) {
@@ -78,15 +80,15 @@ public class BaseFragment extends Fragment implements FragmentDescriptor {
      * returned.
      */
     @Override
-    public Animation onCreateAnimation(int transit, boolean enter, int nextAnim) {
+    public Animator onCreateAnimator(int transit, boolean enter, int nextAnim) {
         FragmentSwapper fragmentSwapper = mFragmentDescriptor.getFragmentSwapper();
 
         if ((fragmentSwapper == null) || fragmentSwapper.isAnimationEnabled()) {
-            return super.onCreateAnimation(transit, enter, nextAnim);
+            return super.onCreateAnimator(transit, enter, nextAnim);
         } else {
-            Animation animation = new Animation() {};
-            animation.setDuration(0);
-            return animation;
+            // TODO Animator animation = new TimeAnimator();
+            // animation.setDuration(0);
+            return null;
         }
     }
 
