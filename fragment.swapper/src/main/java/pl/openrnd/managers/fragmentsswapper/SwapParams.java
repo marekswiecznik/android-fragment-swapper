@@ -168,10 +168,10 @@ public class SwapParams {
         }
 
         private void initDefaultValues() {
-            mEnterAnimResId = R.animator.slide_left_out;
-            mExitAnimResId = R.animator.slide_right_out;
-            mPopEnterAnimResId = R.animator.slide_left_in;
-            mPopExitAnimResId = R.animator.slide_right_in;
+            mEnterAnimResId = R.animator.slide_left_in;
+            mExitAnimResId = R.animator.slide_left_out;
+            mPopEnterAnimResId = R.animator.slide_right_in;
+            mPopExitAnimResId = R.animator.slide_right_out;
             mAnimate = true;
             mRequestCode = null;
             mAddToBackStack = true;
